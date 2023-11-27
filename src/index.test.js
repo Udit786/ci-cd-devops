@@ -16,5 +16,16 @@ test("Should subtract two numbers", () => {
 });
 
 // Test Case 3 (Multiplication)
+test("Should multiply two numbers", () => {
+  expect(multiply(5, 8)).toBe(40);
+});
 
 // Test Case 4 (Division)
+test("Should divide two numbers", () => {
+  expect(divide(40, 8)).toBe(5);
+});
+
+// Additional Test Case for Division (handling division by zero)
+test("Should handle division by zero", () => {
+  expect(divide(20, 0)).toBe("Cannot divide by zero");
+});
